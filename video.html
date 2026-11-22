@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Video Production | Katharine Caruso ePortfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+        .video-grid {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: clamp(24px, 4vw, 48px);
+        }
+
+        .video-grid h2 {
+            margin: 0 0 12px;
+        }
+
+        .video-grid iframe {
+            display: block;
+            width: 100%;
+            aspect-ratio: 16 / 9;
+            border: 0;
+        }
+
+        @media (max-width: 700px) {
+            .video-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="site-header">
+        <nav class="navigation" aria-label="Portfolio">
+            <a class="site-name" href="index.html">Katharine Caruso</a>
+            <div class="nav-links">
+                <a href="index.html#about">About</a>
+                <a href="index.html#projects">Projects</a>
+                <a href="index.html#contact">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="projects">
+        <header class="section-heading">
+            <h1>Video Production</h1>
+            <p>I combined visuals, narration, and transitions to create an educational video. I also made an AI-assisted version to compare how the two approaches shaped the finished video.</p>
+        </header>
+
+        <div class="video-grid">
+            <section aria-labelledby="traditional-video">
+                <h2 id="traditional-video">Traditionally Created</h2>
+                <iframe src="https://www.youtube-nocookie.com/embed/IUUD2zqemuE"
+                        title="Traditionally created educational video"
+                        loading="lazy" allowfullscreen></iframe>
+                <p><a class="project-link" href="https://youtu.be/IUUD2zqemuE">Watch the traditional video on YouTube</a></p>
+            </section>
+
+            <section aria-labelledby="ai-video">
+                <h2 id="ai-video">AI-Assisted</h2>
+                <iframe src="https://www.youtube-nocookie.com/embed/XCssJnGCSkc"
+                        title="AI-assisted educational video"
+                        loading="lazy" allowfullscreen></iframe>
+                <p><a class="project-link" href="https://youtu.be/XCssJnGCSkc">Watch the AI-assisted video on YouTube</a></p>
+            </section>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <p>© 2026 Katharine Caruso | EME 6208 DIME | <a href="https://education.ufl.edu/educational-technology/" style="color: var(--gold);">UF Educational Technology</a></p>
+    </footer>
+</body>
+</html>
