@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Screencasting | Katharine Caruso ePortfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+        .video-grid {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: clamp(24px, 4vw, 48px);
+        }
+
+        .video-grid h2 {
+            margin: 0 0 12px;
+        }
+
+        .video-grid iframe {
+            display: block;
+            width: 100%;
+            aspect-ratio: 16 / 9;
+            border: 0;
+        }
+
+        .screencast-reflection {
+            max-width: 75ch;
+            margin-top: 40px;
+            padding-top: 24px;
+            border-top: 2px solid var(--gold);
+        }
+
+        @media (max-width: 700px) {
+            .video-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="site-header">
+        <nav class="navigation" aria-label="Portfolio">
+            <a class="site-name" href="index.html">Katharine Caruso</a>
+            <div class="nav-links">
+                <a href="index.html#about">About</a>
+                <a href="index.html#projects">Projects</a>
+                <a href="index.html#contact">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="projects">
+        <header class="section-heading">
+            <h1>Screencasting</h1>
+            <p>I created two screencasts. In the first, I show how to publish a website with GitHub Pages. In the second, I use Runway to explore how lighting and camera movement can change the mood of a scene.</p>
+        </header>
+
+        <div class="video-grid">
+            <section aria-labelledby="github-tutorial-title">
+                <h2 id="github-tutorial-title">Traditional Screencast</h2>
+
+                <iframe src="https://www.youtube-nocookie.com/embed/pfrvyCOSvxM"
+                        title="Publishing a Webpage with GitHub Pages"
+                        loading="lazy"
+                        referrerpolicy="strict-origin-when-cross-origin"
+                        allowfullscreen></iframe>
+                <p><a class="project-link" href="https://youtu.be/pfrvyCOSvxM">Watch the GitHub Pages tutorial on YouTube</a></p>
+
+                <p>In this tutorial, I demonstrate how to create a GitHub repository and publish a simple HTML website using GitHub Pages.</p>
+                <p>I used Camtasia to create the screencast and narrated it myself. I explain each step while showing where to do it in GitHub, from creating the repository to publishing the webpage.</p>
+            </section>
+
+            <section id="screencast" aria-labelledby="screencast-title">
+                <h2 id="screencast-title">AI Tool Screencast</h2>
+
+                <iframe src="https://www.youtube-nocookie.com/embed/HiM4t4xhzRk"
+                        title="Runway Gen-4.5 Screencast | Same Coffee, Different Story"
+                        loading="lazy"
+                        referrerpolicy="strict-origin-when-cross-origin"
+                        allowfullscreen></iframe>
+                <p><a class="project-link" href="https://youtu.be/HiM4t4xhzRk">Watch <i>Same Coffee, Different Story</i> on YouTube</a></p>
+
+                <p>In this screencast, I demonstrate Runway Gen-4.5. I compare two clips made from the same coffee-cup image to show how lighting and camera movement shape the mood of a scene.</p>
+            </section>
+        </div>
+
+        <section class="screencast-reflection" aria-labelledby="runway-reflection-title">
+            <h2 id="runway-reflection-title">Using an AI-Video Platform to Create a Screencast</h2>
+
+            <p>For this project, I shared how Runway, an AI video platform, can generate short clips from a written prompt or a starting image.</p>
+
+            <p>For my screencast, I used the same coffee cup image to create two five-second clips. I wanted one clip to feel like a cozy café ad and the other to feel like the opening of a thriller. In the café version, I asked for steam to rise from the cup as sunlight spread across the counter. In the thriller, a shadow passed behind the cup as the camera moved closer.</p>
+
+            <p>Those choices changed how a viewer might interpret the scene.</p>
+
+            <p>As an instructor, I would use this comparison with my learners to show how lighting, framing, and camera movement can influence what an audience expects to happen. I’d play both clips before revealing the prompts and ask learners to identify a specific moment that shaped their interpretation. Then I’d have them revise one line of a prompt to create a different mood and compare the result with the original. Learners could apply that same process when planning a presentation, an ad, or a training video.</p>
+
+            <p>Using Runway was an efficient and effective way to try two visual approaches without filming or setting up lighting. It also showed how much planning and forethought is involved. I asked for the camera to creep forward in the thriller clip, but it moved so close that part of the cup went out of frame. If I did this exercise again, I’d revise the prompt to specify that the whole cup should stay visible throughout the shot. Each new clip uses credits, so I’d decide what I want to test before generating a revision.</p>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>© 2026 Katharine Caruso | EME 6208 DIME | <a href="https://education.ufl.edu/educational-technology/" style="color: var(--gold);">UF Educational Technology</a></p>
+    </footer>
+</body>
+</html>
