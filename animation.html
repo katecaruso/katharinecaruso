@@ -1,10 +1,12 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Digital Animation | Katharine Caruso ePortfolio</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css">
+
     <style>
         .animation-video {
             max-width: 800px;
@@ -17,12 +19,26 @@
             aspect-ratio: 16 / 9;
             border: 0;
         }
+
+        .animation-video p {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .site-footer a {
+            color: var(--gold);
+        }
     </style>
 </head>
+
 <body>
+
     <header class="site-header">
         <nav class="navigation" aria-label="Portfolio">
-            <a class="site-name" href="index.html">Katharine Caruso</a>
+            <a class="site-name" href="index.html">
+                Katharine Caruso
+            </a>
+
             <div class="nav-links">
                 <a href="index.html#about">About</a>
                 <a href="index.html#projects">Projects</a>
@@ -32,22 +48,55 @@
     </header>
 
     <main class="projects">
+
         <header class="section-heading">
+
             <h1>Digital Animation</h1>
-            <h2><em>PIVOT! The One Where They Should Have Used Physics</em></h2>
-            <p>I created a <em>Friends</em>-inspired animation explaining how pushing farther from a fixed pivot increases torque. I used AI to develop the visuals and narration.</p>
+
+            <h2>
+                <em>PIVOT! The One Where They Should've Used Physics</em>
+            </h2>
+
+            <p>
+                I created a <em>Friends</em>-inspired animation
+                explaining how pushing farther from a fixed pivot
+                increases torque. I used AI to develop the visuals
+                and narration.
+            </p>
+
         </header>
 
         <div class="animation-video">
-            <iframe src="https://youtu.be/uYMLR7jfGhE?si=v5NXhYZZx-mcEnf9
-                    title="PIVOT! The One Where They Should've Used Physics"
-                    loading="lazy" allowfullscreen></iframe>
-            <p><a class="project-link" href="https://youtu.be/uYMLR7jfGhE">Watch PIVOT! on YouTube</a></p>
+
+            <iframe
+                src="https://www.youtube.com/embed/uYMLR7jfGhE"
+                title="PIVOT! The One Where They Should've Used Physics"
+                loading="lazy"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen>
+            </iframe>
+
+            <p>
+                <a class="project-link"
+                   href="https://youtu.be/uYMLR7jfGhE"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    Watch PIVOT! on YouTube
+                </a>
+            </p>
+
         </div>
+
     </main>
 
     <footer class="site-footer">
-        <p>© 2026 Katharine Caruso | EME 6208 DIME | <a href="https://education.ufl.edu/educational-technology/" style="color: var(--gold);">UF Educational Technology</a></p>
+        <p>
+            &copy; 2026 Katharine Caruso | EME 6208 DIME |
+            <a href="https://education.ufl.edu/educational-technology/">
+                UF Educational Technology
+            </a>
+        </p>
     </footer>
+
 </body>
 </html>
