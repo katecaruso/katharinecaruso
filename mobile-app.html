@@ -3,55 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mobile App Development | Katharine Caruso</title>
+    <title>Mobile App Development | Katharine Caruso ePortfolio</title>
     <link rel="stylesheet" href="style.css">
 
     <style>
-        .mobile-development .mobile-page {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: clamp(36px, 6vw, 72px) clamp(20px, 4vw, 30px);
-        }
-
-        .mobile-development h1,
-        .mobile-development h2 {
-            color: var(--navy);
-            line-height: 1.2;
-        }
-
-        .mobile-development h1 {
-            margin: 0 0 20px;
-            font-size: clamp(36px, 6vw, 52px);
-        }
-
-        .mobile-development h2 {
-            margin: 0 0 20px;
-            font-size: clamp(24px, 4vw, 32px);
-        }
-
-        .mobile-development .mobile-intro {
-            max-width: 72ch;
-        }
-
-        .mobile-development .mobile-section {
-            margin-top: clamp(32px, 5vw, 56px);
-            padding-top: clamp(24px, 4vw, 40px);
-            border-top: 2px solid var(--gold);
+        .mobile-development .app-showcase,
+        .mobile-development .reflection-card {
+            background: #FFFFFF;
+            border-top: 4px solid var(--gold);
+            border-radius: 12px;
+            padding: clamp(24px, 4vw, 40px);
+            box-shadow: 0 8px 25px rgba(23, 50, 77, 0.07);
         }
 
         .mobile-development .app-showcase {
-            background: #FFFFFF;
-            padding: clamp(20px, 4vw, 40px);
-            border-radius: 12px;
-            border-top: 4px solid var(--gold);
-            box-shadow: 0 8px 25px rgba(23, 50, 77, 0.07);
             text-align: center;
         }
 
         .mobile-development .app-title {
             color: #49366F;
-            font-size: clamp(26px, 4vw, 38px);
-            margin: 0 0 12px;
+            font-size: clamp(24px, 3vw, 30px);
+            line-height: 1.4;
+            max-width: 650px;
+            margin: 0 auto 12px;
         }
 
         .mobile-development .friends-dots {
@@ -89,8 +63,6 @@
             max-width: 65ch;
             margin: 0 auto 28px;
         }
-
-        /* Mobile app screenshots */
 
         .mobile-development .app-screenshots {
             display: grid;
@@ -139,8 +111,29 @@
             font-weight: 600;
         }
 
+        .mobile-development .reflection-card {
+            margin-top: 35px;
+            text-align: left;
+        }
+
+        .mobile-development .reflection-card h2 {
+            color: var(--navy);
+            font-size: clamp(24px, 3vw, 30px);
+            line-height: 1.4;
+            margin: 0 0 24px;
+        }
+
+        .mobile-development .reflection-card p {
+            max-width: 90ch;
+        }
+
+        .mobile-development .reflection-card p:last-child {
+            margin-bottom: 0;
+        }
+
         .mobile-development .feature-list {
             padding-left: 22px;
+            margin-bottom: 0;
         }
 
         .mobile-development .feature-list li {
@@ -155,10 +148,11 @@
 
         .mobile-development .back-link {
             margin-top: 35px;
+            text-align: left;
         }
 
-        .mobile-development .site-footer p {
-            margin: 0;
+        .mobile-development .primary-button {
+            color: #FFFFFF;
         }
 
         .mobile-development .site-footer a {
@@ -174,8 +168,6 @@
         .mobile-development .site-footer a:focus-visible {
             outline-color: var(--gold);
         }
-
-        /* Responsive layout */
 
         @media (max-width: 640px) {
             .mobile-development .app-screenshots {
@@ -197,6 +189,7 @@
 
     <header class="site-header">
         <nav class="navigation" aria-label="Main navigation">
+
             <a class="site-name" href="index.html">
                 Katharine Caruso
             </a>
@@ -206,12 +199,13 @@
                 <a href="index.html#projects">Projects</a>
                 <a href="index.html#contact">Contact</a>
             </div>
+
         </nav>
     </header>
 
-    <main class="mobile-page">
+    <main class="projects">
 
-        <section class="mobile-intro">
+        <header class="section-heading">
 
             <h1>Mobile App Development</h1>
 
@@ -224,85 +218,92 @@
                 mobile interface design, and the process of
                 developing and testing an interactive application.
             </p>
-        </section>
 
-        <section class="mobile-section">
+        </header>
 
-            <div class="app-showcase">
+        <section class="app-showcase"
+                 aria-labelledby="app-title">
 
-                <h2 class="app-title">
-                    The One with the Friends Trivia Quiz
-                </h2>
+            <h2 class="app-title" id="app-title">
+                The One with the Friends Trivia Quiz
+            </h2>
 
-                <div class="friends-dots" aria-hidden="true">
-                    <span class="dot-red"></span>
-                    <span class="dot-yellow"></span>
-                    <span class="dot-blue"></span>
-                    <span class="dot-red"></span>
-                    <span class="dot-yellow"></span>
-                    <span class="dot-blue"></span>
-                </div>
+            <div class="friends-dots" aria-hidden="true">
+                <span class="dot-red"></span>
+                <span class="dot-yellow"></span>
+                <span class="dot-blue"></span>
+                <span class="dot-red"></span>
+                <span class="dot-yellow"></span>
+                <span class="dot-blue"></span>
+            </div>
 
-                <p class="app-tagline">
-                    How well do you know the gang?
-                </p>
+            <p class="app-tagline">
+                How well do you know the gang?
+            </p>
 
-                <p class="app-description">
-                    Test your knowledge of the iconic television
-                    series with ten multiple-choice questions,
-                    playful feedback, live score tracking, and
-                    a final score. Think you know everything
-                    about <em>Friends</em>?
-                </p>
+            <p class="app-description">
+                Test your knowledge of the iconic television
+                series with ten multiple-choice questions,
+                playful feedback, live score tracking, and
+                a final score. Think you know everything
+                about <em>Friends</em>?
+            </p>
 
-                <div class="app-screenshots">
+            <div class="app-screenshots">
 
-                    <figure>
-                        <img
-                            src="https://katecaruso.github.io/mobile-app/quiz-screen.png"
-                            alt="Friends trivia mobile app displaying a multiple-choice question, progress indicator, and score">
-                        <figcaption>
-                            Interactive Trivia Questions
-                        </figcaption>
-                    </figure>
+                <figure>
 
-                    <figure>
-                        <img
-                            src="https://katecaruso.github.io/mobile-app/results-screen.png"
-                            alt="Friends trivia mobile app displaying the final quiz score and restart button">
-                        <figcaption>
-                            Final Results and Restart
-                        </figcaption>
-                    </figure>
+                    <img
+                        src="https://katecaruso.github.io/mobile-app/quiz-screen.png"
+                        alt="Friends trivia mobile app displaying a multiple-choice question, progress indicator, and score">
 
-                </div>
+                    <figcaption>
+                        Interactive Trivia Questions
+                    </figcaption>
 
-                <a class="primary-button"
-                   href="https://katecaruso.github.io/mobile-app/FriendsTriviaQuiz.apk"
-                   download>
-                    Download Android App (.apk)
-                </a>
+                </figure>
 
-                <p class="download-note">
-                    The APK file is intended for Android devices.
-                    I tested the application on my iPhone using
-                    the MIT App Inventor Companion.
-                </p>
+                <figure>
 
-                <p>
-                    <a class="text-link"
-                       href="https://katecaruso.github.io/friends-quiz/">
-                        View the Original Web-Based Trivia Quiz
-                    </a>
-                </p>
+                    <img
+                        src="https://katecaruso.github.io/mobile-app/results-screen.png"
+                        alt="Friends trivia mobile app displaying the final quiz score and restart button">
+
+                    <figcaption>
+                        Final Results and Restart
+                    </figcaption>
+
+                </figure>
 
             </div>
 
+            <a class="primary-button"
+               href="https://katecaruso.github.io/mobile-app/FriendsTriviaQuiz.apk"
+               download>
+                Download Android App (.apk)
+            </a>
+
+            <p class="download-note">
+                The APK file is intended for Android devices.
+                I tested the application on my iPhone using
+                the MIT App Inventor Companion.
+            </p>
+
+            <p>
+                <a class="text-link"
+                   href="https://katecaruso.github.io/friends-quiz/">
+                    View the Original Web-Based Trivia Quiz
+                </a>
+            </p>
+
         </section>
 
-        <section class="mobile-section">
+        <section class="reflection-card"
+                 aria-labelledby="development-heading">
 
-            <h2>Development Process</h2>
+            <h2 id="development-heading">
+                Development Process
+            </h2>
 
             <p>
                 This was my first experience using MIT App Inventor.
@@ -337,9 +338,12 @@
 
         </section>
 
-        <section class="mobile-section">
+        <section class="reflection-card"
+                 aria-labelledby="testing-heading">
 
-            <h2>Testing and Usability</h2>
+            <h2 id="testing-heading">
+                Testing and Usability
+            </h2>
 
             <p>
                 I tested the application on my iPhone using
@@ -368,9 +372,12 @@
 
         </section>
 
-        <section class="mobile-section">
+        <section class="reflection-card"
+                 aria-labelledby="reflection-heading">
 
-            <h2>AI-Assisted Development and Reflection</h2>
+            <h2 id="reflection-heading">
+                AI-Assisted Development and Reflection
+            </h2>
 
             <p>
                 My experience with PowerApps made some aspects
@@ -425,7 +432,7 @@
 
     <footer class="site-footer">
         <p>
-            &copy; 2026 Katharine Caruso |
+            &copy; 2026 Katharine Caruso | EME 6208 DIME |
             <a href="https://education.ufl.edu/educational-technology/">
                 UF Educational Technology
             </a>
