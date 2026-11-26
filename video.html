@@ -1,74 +1,190 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Video Production | Katharine Caruso ePortfolio</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css">
+
     <style>
-        .video-grid {
+        .video-production .video-grid {
             display: grid;
             grid-template-columns: repeat(2, minmax(0, 1fr));
-            gap: clamp(24px, 4vw, 48px);
+            gap: 30px;
+            align-items: stretch;
         }
 
-        .video-grid h2 {
-            margin: 0 0 12px;
+        .video-production .video-card {
+            display: flex;
+            flex-direction: column;
+            background: #FFFFFF;
+            border-top: 4px solid var(--gold);
+            border-radius: 12px;
+            padding: clamp(24px, 4vw, 40px);
+            box-shadow: 0 8px 25px rgba(23, 50, 77, 0.07);
+            text-align: center;
         }
 
-        .video-grid iframe {
+        .video-production .video-card h2 {
+            color: var(--navy);
+            font-size: clamp(24px, 3vw, 30px);
+            line-height: 1.4;
+            margin: 0 0 24px;
+        }
+
+        .video-production .video-card iframe {
             display: block;
             width: 100%;
             aspect-ratio: 16 / 9;
             border: 0;
+            border-radius: 6px;
         }
 
-        @media (max-width: 700px) {
-            .video-grid {
+        .video-production .video-links {
+            margin-top: auto;
+            padding-top: 25px;
+        }
+
+        .video-production .back-link {
+            margin-top: 35px;
+            text-align: left;
+        }
+
+        .video-production .back-link .primary-button {
+            color: #FFFFFF;
+        }
+
+        .video-production .site-footer a {
+            color: var(--gold);
+        }
+
+        .video-production a:focus-visible {
+            outline: 2px solid var(--teal);
+            outline-offset: 4px;
+        }
+
+        .video-production .site-header a:focus-visible,
+        .video-production .site-footer a:focus-visible {
+            outline-color: var(--gold);
+        }
+
+        @media (max-width: 768px) {
+            .video-production .video-grid {
                 grid-template-columns: 1fr;
             }
         }
     </style>
 </head>
-<body>
+
+<body class="video-production">
+
     <header class="site-header">
-        <nav class="navigation" aria-label="Portfolio">
-            <a class="site-name" href="index.html">Katharine Caruso</a>
+        <nav class="navigation" aria-label="Main navigation">
+
+            <a class="site-name" href="index.html">
+                Katharine Caruso
+            </a>
+
             <div class="nav-links">
                 <a href="index.html#about">About</a>
                 <a href="index.html#projects">Projects</a>
                 <a href="index.html#contact">Contact</a>
             </div>
+
         </nav>
     </header>
 
     <main class="projects">
+
         <header class="section-heading">
+
             <h1>Video Production</h1>
-            <p>I combined visuals, narration, and transitions to create an educational video. I also made an AI-assisted version to compare how the two approaches shaped the finished video.</p>
+
+            <p>
+                I combined visuals, narration, and transitions
+                to create an educational video. I also made an
+                AI-assisted version to compare how the two
+                approaches shaped the finished video.
+            </p>
+
         </header>
 
         <div class="video-grid">
-            <section aria-labelledby="traditional-video">
-                <h2 id="traditional-video">Traditionally Created</h2>
-                <iframe src="https://www.youtube-nocookie.com/embed/IUUD2zqemuE"
-                        title="Traditionally created educational video"
-                        loading="lazy" allowfullscreen></iframe>
-                <p><a class="project-link" href="https://youtu.be/IUUD2zqemuE">Watch the traditional video on YouTube</a></p>
+
+            <section class="video-card"
+                     aria-labelledby="traditional-video">
+
+                <h2 id="traditional-video">
+                    Traditionally Created
+                </h2>
+
+                <iframe
+                    src="https://www.youtube-nocookie.com/embed/IUUD2zqemuE"
+                    title="Traditionally created educational video"
+                    loading="lazy"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen>
+                </iframe>
+
+                <div class="video-links">
+
+                    <a class="project-link"
+                       href="https://youtu.be/IUUD2zqemuE"
+                       target="_blank"
+                       rel="noopener noreferrer">
+                        Watch the traditional video on YouTube
+                    </a>
+
+                </div>
+
             </section>
 
-            <section aria-labelledby="ai-video">
-                <h2 id="ai-video">AI-Assisted</h2>
-                <iframe src="https://www.youtube-nocookie.com/embed/XCssJnGCSkc"
-                        title="AI-assisted educational video"
-                        loading="lazy" allowfullscreen></iframe>
-                <p><a class="project-link" href="https://youtu.be/XCssJnGCSkc">Watch the AI-assisted video on YouTube</a></p>
+            <section class="video-card"
+                     aria-labelledby="ai-video">
+
+                <h2 id="ai-video">
+                    AI-Assisted
+                </h2>
+
+                <iframe
+                    src="https://www.youtube-nocookie.com/embed/XCssJnGCSkc"
+                    title="AI-assisted educational video"
+                    loading="lazy"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen>
+                </iframe>
+
+                <div class="video-links">
+
+                    <a class="project-link"
+                       href="https://youtu.be/XCssJnGCSkc"
+                       target="_blank"
+                       rel="noopener noreferrer">
+                        Watch the AI-assisted video on YouTube
+                    </a>
+
+                </div>
+
             </section>
+
         </div>
+
+        <div class="back-link">
+            <a class="primary-button" href="index.html#projects">
+                &larr; Back to Featured Projects
+            </a>
+        </div>
+
     </main>
 
     <footer class="site-footer">
-        <p>© 2026 Katharine Caruso | EME 6208 DIME | <a href="https://education.ufl.edu/educational-technology/" style="color: var(--gold);">UF Educational Technology</a></p>
+        <p>
+            &copy; 2026 Katharine Caruso | EME 6208 DIME |
+            <a href="https://education.ufl.edu/educational-technology/">
+                UF Educational Technology
+            </a>
+        </p>
     </footer>
+
 </body>
 </html>
