@@ -1,58 +1,177 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web Design | Katharine Caruso ePortfolio</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        .web-design .back-link {
+            margin-top: 35px;
+            text-align: left;
+        }
+
+        .web-design .back-link .primary-button {
+            color: #FFFFFF;
+        }
+
+        .web-design .related-project {
+            margin-top: 35px;
+            padding: 25px 30px;
+            background: #FFFFFF;
+            border-top: 4px solid var(--gold);
+            border-radius: 12px;
+            box-shadow: 0 8px 25px rgba(23, 50, 77, 0.07);
+        }
+
+        .web-design .related-project h2 {
+            color: var(--navy);
+            margin: 0 0 15px;
+            font-size: 24px;
+        }
+
+        .web-design .site-footer a {
+            color: var(--gold);
+        }
+
+        .web-design a:focus-visible {
+            outline: 2px solid var(--teal);
+            outline-offset: 4px;
+        }
+
+        .web-design .site-header a:focus-visible,
+        .web-design .site-footer a:focus-visible {
+            outline-color: var(--gold);
+        }
+    </style>
 </head>
-<body>
+
+<body class="web-design">
+
     <header class="site-header">
-        <nav class="navigation" aria-label="Portfolio">
-            <a class="site-name" href="index.html">Katharine Caruso</a>
+        <nav class="navigation" aria-label="Main navigation">
+
+            <a class="site-name" href="index.html">
+                Katharine Caruso
+            </a>
+
             <div class="nav-links">
                 <a href="index.html#about">About</a>
                 <a href="index.html#projects">Projects</a>
                 <a href="index.html#contact">Contact</a>
             </div>
+
         </nav>
     </header>
 
     <main class="projects">
+
         <header class="section-heading">
+
             <h1>Web Design</h1>
-            <p>I created a <em>Friends</em>-themed trivia quiz and drag-and-drop activity using HTML, CSS, and JavaScript. I also created an AI-assisted version of the drag-and-drop activity to compare traditional and AI-assisted development.</p>
+
+            <p>
+                I created a <em>Friends</em>-themed trivia quiz
+                and drag-and-drop activity using HTML, CSS, and
+                JavaScript. I also created an AI-assisted version
+                of the drag-and-drop activity to compare traditional
+                and AI-assisted development.
+            </p>
+
         </header>
 
         <div class="project-grid">
+
             <article class="project-card">
+
                 <h2>Friends Trivia Quiz</h2>
-                <p>Test your knowledge of <em>Friends</em> in an interactive quiz.</p>
+
+                <p>
+                    Test your knowledge of <em>Friends</em>
+                    in an interactive quiz.
+                </p>
+
                 <div class="project-links">
-                    <a class="project-link" href="friends-quiz/">Start the trivia quiz</a>
+                    <a class="project-link" href="friends-quiz/">
+                        Start the trivia quiz
+                    </a>
                 </div>
+
             </article>
 
             <article class="project-card">
+
                 <h2>Traditional Drag-and-Drop</h2>
-                <p>Try the <em>Friends</em> activity I built with HTML, CSS, and JavaScript.</p>
+
+                <p>
+                    Try the <em>Friends</em> activity I built
+                    with HTML, CSS, and JavaScript.
+                </p>
+
                 <div class="project-links">
-                    <a class="project-link" href="friends-drag-drop/">Try the traditional activity</a>
+                    <a class="project-link" href="friends-drag-drop/">
+                        Try the traditional activity
+                    </a>
                 </div>
+
             </article>
 
             <article class="project-card">
+
                 <h2>AI-Assisted Drag-and-Drop</h2>
-                <p>Try the AI-assisted version and compare how the two activities work.</p>
+
+                <p>
+                    Try the AI-assisted version and compare
+                    how the two activities work.
+                </p>
+
                 <div class="project-links">
-                    <a class="project-link" href="friends-drag-drop-ai/">Try the AI-assisted activity</a>
+                    <a class="project-link" href="friends-drag-drop-ai/">
+                        Try the AI-assisted activity
+                    </a>
                 </div>
+
             </article>
+
         </div>
+
+        <section class="related-project">
+
+            <h2>From Web Design to Mobile App Development</h2>
+
+            <p>
+                I later revisited my original <em>Friends</em>
+                trivia quiz and adapted it into a mobile application
+                using MIT App Inventor. This gave me an opportunity
+                to build on my earlier work while exploring visual
+                programming and mobile interface design.
+            </p>
+
+            <div class="project-links">
+                <a class="project-link" href="mobile-app.html">
+                    View Mobile App Project
+                </a>
+            </div>
+
+        </section>
+
+        <div class="back-link">
+            <a class="primary-button" href="index.html#projects">
+                &larr; Back to Featured Projects
+            </a>
+        </div>
+
     </main>
 
     <footer class="site-footer">
-        <p>© 2026 Katharine Caruso | EME 6208 DIME | <a href="https://education.ufl.edu/educational-technology/" style="color: var(--gold);">UF Educational Technology</a></p>
+        <p>
+            &copy; 2026 Katharine Caruso | EME 6208 DIME |
+            <a href="https://education.ufl.edu/educational-technology/">
+                UF Educational Technology
+            </a>
+        </p>
     </footer>
+
 </body>
 </html>
