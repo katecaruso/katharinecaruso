@@ -79,8 +79,27 @@
             margin-bottom: 0;
         }
 
+        .image-editing .back-link {
+            margin-top: 35px;
+            text-align: left;
+        }
+
+        .image-editing .back-link .primary-button {
+            color: #FFFFFF;
+        }
+
         .image-editing .site-footer a {
             color: var(--gold);
+        }
+
+        .image-editing a:focus-visible {
+            outline: 2px solid var(--teal);
+            outline-offset: 4px;
+        }
+
+        .image-editing .site-header a:focus-visible,
+        .image-editing .site-footer a:focus-visible {
+            outline-color: var(--gold);
         }
 
         @media (max-width: 768px) {
@@ -233,10 +252,10 @@
                         Austen's <em>Sense and Sensibility</em>.
                         I provided instructions about the book's
                         themes and asked AI to apply design
-                        principles such as visual hierarchy,
-                        scale, and color theory. The resulting
-                        image was created much more quickly
-                        than my traditional cover.
+                        principles such as visual hierarchy, scale,
+                        and color theory. The resulting image was
+                        created much more quickly than my
+                        traditional cover.
                     </p>
 
                     <p>
@@ -257,6 +276,12 @@
             </div>
 
         </section>
+
+        <div class="back-link">
+            <a class="primary-button" href="index.html#projects">
+                &larr; Back to Featured Projects
+            </a>
+        </div>
 
     </main>
 
